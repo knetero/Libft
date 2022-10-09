@@ -1,15 +1,15 @@
 #include "libft.h"
 
-void	*ft_memset(void *ptr, int x, size_t n)
+void	*ft_memset(void *ptr, int i, size_t n)
 {
 	char*p;
 
 	p = ptr;
 	while (n > 0)
 	{
-		*p = x;
+		*p = i; // changing the first index of the array pointed by *p//
 		p++;
-		n--;
+        i--; 
 	}
 	return (ptr);
 }
