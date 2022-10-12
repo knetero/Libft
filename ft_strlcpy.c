@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 16:05:58 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/08 16:06:01 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/12 12:01:13 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	unsigned int i;
-	unsigned int j;
+	int j;
 
 	i = 0;
 	j = ft_strlen(src);
@@ -29,4 +29,13 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		dest[i] = '\0';
 	}
 	return (j);
+}
+int main()
+{
+	char src[] = "hello";
+	char dst[] = "oiop";
+	unsigned int a;
+	a = ft_strlcpy(dst, src, 3);
+	printf("%u\n", a);
+	printf("%s", dst);
 }

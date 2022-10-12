@@ -1,24 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strrch.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/09 17:57:54 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/12 13:16:39 by abazerou         ###   ########.fr       */
+/*   Created: 2022/10/12 14:15:10 by abazerou          #+#    #+#             */
+/*   Updated: 2022/10/12 14:15:45 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t i)
-{
-    ft_memset(s, 0, i);
-}
-// int main()
+// char *ft_strchr(const char *s, int c)
 // {
-//     char str[] = "HELLO WORLD";
-//     ft_bzero(str, 3);
-//     puts(str);
+//     int i;
+//     i = 0;
+//     while(s[i])
+//     {
+//         if(s[i] == c)
+//         {
+//             return((char*) s + i);
+//         }
+//         i++;
+//     }
+//     return NULL;
 // }
+int main()
+{
+    char s[] = "whoareyouyesyep";
+    int c = 'a';
+    // printf("%s\n", ft_strchr(s, c));
+    
+    printf("'%s'\n", strrchr(s, c));
+}
