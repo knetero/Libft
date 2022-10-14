@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 16:28:05 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/13 17:10:04 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/13 17:50:12 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,10 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
     }
     return (0);
 }
-// int main()
-// {
-//     char s1[] = "afreyouxxz";
-//     char s2[] = "zbdcdefjh";
-//     printf("%d", ft_memcmp(s1, s2, 8));
-//     // printf("%d", memcmp(s1, s2, 5));
-// }
+int main()
+{
+    char s1[] = "hellos";
+    char s2[] = "hellod";
+    printf("%d\n", ft_memcmp(s1, s2, 5));
+    printf("%d\n", memcmp(s1, s2, 5));
+}

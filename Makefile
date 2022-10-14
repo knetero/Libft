@@ -6,7 +6,7 @@
 #    By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/09 13:07:13 by abazerou          #+#    #+#              #
-#    Updated: 2022/10/12 14:34:28 by abazerou         ###   ########.fr        #
+#    Updated: 2022/10/14 12:51:24 by abazerou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,4 +39,3 @@ fclean: clean
 	rm -rf $(NAME)
 re: fclean all
 
-.PHONY: all clean fclean re bonus
