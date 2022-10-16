@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 14:15:10 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/13 19:31:23 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/14 14:32:53 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char *ft_strrchr(const char *s, int c)
 int main()
 {
     char s[] = "efwef";
-    int c = '';
+    int c = 'f';
     printf("%s\n", ft_strrchr(s, c));
     
     // printf("'%s'\n", strrchr(s, c));
