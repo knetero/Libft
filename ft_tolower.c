@@ -1,41 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/08 16:05:58 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/16 16:31:21 by abazerou         ###   ########.fr       */
+/*   Created: 2022/10/17 08:43:34 by abazerou          #+#    #+#             */
+/*   Updated: 2022/10/17 08:43:37 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t size)
+int	ft_tolower(int c)
 {
-	unsigned int i;
-	int j;
+	int	i;
 
 	i = 0;
-	j = ft_strlen(src);
-	if (size > 0)
-	{
-		while (src[i] != '\0' && i < (size - 1))
-		{
-			dest[i] = src[i];
-			i++;
-		}
-		dest[i] = '\0';
-	}
-	return (j);
+	if (c >= 'A' && c <= 'Z')
+		c = c + 32;
+	return (c);
 }
-// int main()
-// {
-// 	char src[] = "hello";
-// 	char dst[] = "oiop";
-// 	unsigned int a;
-// 	a = ft_strlcpy(dst, src, 3);
-// 	printf("%u\n", a);
-// 	printf("%s", dst);
-// }

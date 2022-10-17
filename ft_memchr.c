@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 12:07:43 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/13 12:28:05 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/16 16:31:40 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,11 @@ void *ft_memchr(const void *s, int c, size_t n)
     }
     return NULL;
 }
-int main()
-{
-    char s[] = "whoareyouyesyep";
-    int c = 'w';
-    printf("%s\n", ft_memchr(s, c, 10));
+// int main()
+// {
+//     char s[] = "whoareyouyesyep";
+//     int c = 'w';
+//     printf("%s\n", ft_memchr(s, c, 10));
     
-    // printf("'%s'\n", memchr(s, c, 10));
-}
+//     // printf("'%s'\n", memchr(s, c, 10));
+// }

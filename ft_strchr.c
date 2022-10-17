@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 17:15:09 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/13 10:59:17 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/16 16:31:25 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,11 @@ char *ft_strchr(const char *s, int c)
     }
     return NULL;
 }
-int main()
-{
-    char s[] = "whoareyouyesyep";
-    int c = 'y';
-    printf("%s\n", ft_strchr(s, c));
+// int main()
+// {
+//     char s[] = "whoareyouyesyep";
+//     int c = 'y';
+//     printf("%s\n", ft_strchr(s, c));
     
-    // printf("'%s'\n", strrchr(s, c));
-}
+//     // printf("'%s'\n", strrchr(s, c));
+// }
