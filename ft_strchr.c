@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 17:15:09 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/17 14:32:32 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/18 11:31:38 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ char *ft_strchr(const char *s, int c)
         return ((char *)(s + i));
     return (NULL);
 }
-int main()
-{
-    char *s = "there is so \0ma\0ny \0 \\0 in t\0his stri\0ng !\0\0\0\0";
-    printf("|%s|\n", ft_strchr(s, '\0'));
-    printf("|%s|\n", strchr(s, '\0'));
-}
+// int main()
+// {
+//     char *s = "there is so \0ma\0ny \0 \\0 in t\0his stri\0ng !\0\0\0\0";
+//     printf("|%s|\n", ft_strchr(s, '\0'));
+//     printf("|%s|\n", strchr(s, '\0'));
+// }

@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 10:27:26 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/17 15:54:19 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/18 11:31:20 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,9 @@
     }
     return (result * sign);
  }
- int main()
- {
-    char str[] = "99999999999999999999999999999";
-    printf("%d | ", ft_atoi(str));
-    printf("%d", atoi(str));
- }
+//  int main()
+//  {
+//     char str[] = "99999999999999999999999999999";
+//     printf("%d | ", ft_atoi(str));
+//     printf("%d", atoi(str));
+//  }

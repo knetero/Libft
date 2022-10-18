@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:36:10 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/17 15:12:56 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/18 12:26:37 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
 }
 int main()
 {
-    char src[] = "12345";
+    char src[] = "coucou";
     char dst[] = "hello";
-    printf("%s | ", ft_memcpy(dst, src, 3));
-    printf("%s ", memcpy(dst, src, 3));
+    printf("%s | ", ft_memcpy(dst, src, 1));
+    printf("%s ", memcpy(dst, src, 1));
 }
