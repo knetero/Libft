@@ -1,24 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/09 17:57:54 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/18 17:56:03 by abazerou         ###   ########.fr       */
+/*   Created: 2022/10/18 16:47:46 by abazerou          #+#    #+#             */
+/*   Updated: 2022/10/19 08:29:18 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t i)
+void *ft_calloc(size_t count, size_t size)
 {
-    ft_memset(s, 0, i);
+    char *ptr;
+    
+    ptr = (char*)malloc(count* size);
+    if(!ptr)
+    {
+        return (NULL);
+    }
+    else 
+        ft_bzero(ptr, count * size);
+    return ptr;
 }
-// int main()
-// {
-//     char str[] = "HELLO WORLD";
-//     ft_bzero(str, 3);
-//     puts(str);
-// }
+int main()
+{
+    printf("%p\n", ft_calloc(25,sizeof(int)));
+    printf("%p", calloc(25,sizeof(int)));
+    return 0;
+}

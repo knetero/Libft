@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 17:59:52 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/18 12:38:42 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/18 14:02:25 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,13 @@ char *ft_strnstr(const char *s, const char *d, size_t len)
 {
     char *str = (char*)s;
     char *to_find = (char*)d;
+    
+    
     if(*to_find == 0)
     {
         return str;
     }
-    while(*str && len > 0)
+    while(*str != '\0' && len > 0)
     {
         if(*str == *to_find)
         {
@@ -35,6 +37,6 @@ int main()
 {
     char s1[] = "aaabcabcd";
     char s2[] = "aabc";
-    printf("%s | ", strnstr(s1, s2, 8));
-    printf("%s", ft_strnstr(s1, s2, 8));
+    printf("%s | ", strnstr(s1, s2, -1));
+    printf("%s", ft_strnstr(s1, s2, -1));
 }
