@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 18:44:20 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/19 10:03:24 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/19 10:23:17 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,10 @@ char *ft_strdup(const char *s1)
     p[i] = '\0';
     return (p);
 }
-int main()
-{
-    char s1[] = "hello world";
-    char *saved;
-    printf("%s | ", saved = ft_strdup(s1));
-    printf("%s",saved = strdup(s1));
-}
+// int main()
+// {
+//     char s1[] = "hello world";
+//     char *saved;
+//     printf("%s | ", saved = ft_strdup(s1));
+//     printf("%s",saved = strdup(s1));
+// }
