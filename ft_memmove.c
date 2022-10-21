@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 13:28:15 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/20 09:44:38 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/20 16:54:05 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,26 +16,25 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 {
     char *pdst = (char*)dst;
     const char *psrc = (const char*)src;
-    char *tmp;
-    unsigned int i;
     
-    while(psrc[i] && i < len)
+    if(!psrc && !pdst)
+        return NULL;
+    if(pdst > psrc)
     {
-        tmp[i] = psrc[i];
-        i++;
+        while(len > 0)
+        {
+            len--;
+            pdst[len] = psrc[len];
+        }
     }
-    while(tmp[i] && i < len)
-    {
-        pdst[i] = tmp[i];
-        i++;
-    }
-    pdst[i] = '\0';
-    return (pdst);
+    else 
+        ft_memcpy(pdst, psrc, len);
+    return pdst;
 }
-int main()
-{
-    char src[] = "coucou";
-    char dst[100] = "hello";
-    printf("%s | ", ft_memmove(dst, src, 8));
-    printf("%s ", memmove(dst, src, 8));
-}
+// int main()
+// {
+//     char src[] = {65, 66, 67, 68, 69, 0, 45};
+//     char dst[] = { 0,  0,  0,  0,  0,  0, 0};
+//     printf("%s | ", ft_memmove(dst, src, 7));
+//     printf("%s ", memmove(dst, src, 7));
+// }

@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:47:42 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/18 18:45:10 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/20 11:22:30 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,12 @@ int	ft_isalpha(int c);
 int	ft_isascii(int s);
 int	ft_isdigit(int c);
 int	ft_isprint(int j);
+int	ft_toupper(int c);
+int	ft_tolower(int c);
 void ft_bzero(void *s, size_t n);
 void *ft_memset(void *ptr, int i, size_t n);
 void *ft_memcpy(void *dest, const void *src, size_t n);
+void *ft_memmove(void *dst, const void *src, size_t len);
 void *ft_memchr(const void *s, int c, size_t n);
 char *ft_strchr(const char *s, int c);
 char *ft_strrchr(const char *s, int c);

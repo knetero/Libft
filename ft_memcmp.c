@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 16:28:05 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/18 11:31:29 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/20 12:32:40 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
     size_t i;
-    char *str1 = (char*)s1;
-    char *str2 = (char*)s2;
+    unsigned char *str1 = (unsigned char*)s1;
+    unsigned char *str2 = (unsigned char*)s2;
     i = 0;
     if(n == 0)
         return(0);

@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 18:44:20 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/19 10:23:17 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/20 10:41:07 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ char *ft_strdup(const char *s1)
     char *str = (char*)s1;
     int i;
 
+    i = 0;
     if(!(p = (char*)malloc(ft_strlen(str) * sizeof(char))))
         return NULL;
     while(*str)
