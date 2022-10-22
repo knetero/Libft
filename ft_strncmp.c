@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 16:06:50 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/18 11:31:43 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/22 13:42:18 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 }
 // int main()
 // {
-// 	char s1[] = "\200";
-// 	char s2[] = "\0";
-// 	printf("%d | ", ft_strncmp(s1, s2, 5));
-// 	printf("%d", strncmp(s1, s2, 5));
+// 	char s1[] = "hello";
+// 	char s2[] = "heLd";
+// 	printf("%d | ", ft_strncmp(s1, s2, 3));
+// 	printf("%d", strncmp(s1, s2, 3));
 // }
