@@ -22,8 +22,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
         return (NULL);
     if (start > ft_strlen(s))
         return (ft_strdup("\0"));
-    str = (char *)malloc(sizeof(char) * (len));
-    if (!str)
+    str = (char *)malloc(sizeof(char) * (len + 1));
+    if (str == '\0')
         return (NULL);
     while (i < len)
     {
@@ -36,6 +36,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 }
 // int main()
 // {
-//     char *str = "tripouille";
-//     printf("%s", ft_substr(str, 11, 12));
+//     char *str = "i just want this part #############";
+//     printf("%s", ft_substr(str, 5, 10));
 // }
