@@ -6,33 +6,34 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 16:28:05 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/20 12:32:40 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/24 19:42:48 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+
 int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-    size_t i;
-    unsigned char *str1 = (unsigned char*)s1;
-    unsigned char *str2 = (unsigned char*)s2;
-    i = 0;
-    if(n == 0)
-        return(0);
-    while((str1[i] || str2[i]) && i < n)
+    unsigned char *str1;
+    unsigned char *str2;
+
+    str1 = (unsigned char*)s1;
+    str2 = (unsigned char*)s2;
+    while(n--)
     {
-        if(str1[i] == str2[i])
-            i++;
-        else
-            return (str1[i] - str2[i]);
+        if(*str1 != *str2)
+            return (*str1 - *str2);
+        str1++;
+        str2++;
     }
     return (0);
 }
+
 // int main()
 // {
-//     char s1[] = "\xff\xaa\xde\xffMACOSX\xff";
-//     char s2[] = "\xff\xaa\xde\x02";
-//     printf("%d\n", ft_memcmp(s1, s2, 8));
-//     printf("%d\n", memcmp(s1, s2, 8));
+//     char s2[] = {0, 0, 127, 0};
+//     char s3[] = {0, 0, 42, 0};
+//     printf("%d\n", ft_memcmp(s2, s3, 4));
+//     printf("%d\n", memcmp(s2, s3, 4));
 // }

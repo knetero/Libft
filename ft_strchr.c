@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 17:15:09 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/18 11:31:38 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/24 19:45:02 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char *ft_strchr(const char *s, int c)
     i = 0;
     while(s[i])
     {
-        if(s[i] == c)
+        if(s[i] == (unsigned char)c)
             return((char*)s + i);
         i++;
     }
@@ -29,7 +29,8 @@ char *ft_strchr(const char *s, int c)
 }
 // int main()
 // {
-//     char *s = "there is so \0ma\0ny \0 \\0 in t\0his stri\0ng !\0\0\0\0";
-//     printf("|%s|\n", ft_strchr(s, '\0'));
-//     printf("|%s|\n", strchr(s, '\0'));
+//     char *s = "there is sso";
+//     int c = 's';
+//     printf("|%s|\n", ft_strchr(s, c));
+//     printf("|%s|\n", strchr(s, c));
 // }

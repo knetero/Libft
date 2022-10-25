@@ -6,13 +6,16 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:47:42 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/23 16:28:31 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/25 11:39:10 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# define intmax 2147483647
+# define intmin -2147483648
 
 #define NULL 0
 
@@ -50,6 +53,8 @@ void    *ft_calloc(size_t numb, size_t size);
 char    *ft_strdup(const char *s1);
 char    *ft_substr(char const *s, unsigned int start, size_t len);
 char    *ft_strjoin(char const *s1, char const *s2);
+char    *ft_strtrim(char const *s1, char const *set);
+
 
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 17:57:54 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/18 17:56:03 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/24 11:58:55 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ void ft_bzero(void *s, size_t i)
 // int main()
 // {
 //     char str[] = "HELLO WORLD";
-//     ft_bzero(str, 3);
+//     ft_bzero(str, 12);
 //     puts(str);
 // }
