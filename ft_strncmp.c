@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 16:06:50 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/22 13:42:18 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/26 09:25:59 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	unsigned int i;
-	char *ss1 = (char*)s1;
-	char *ss2 = (char*)s2;
+	unsigned char *ss1 = (unsigned char*)s1;
+	unsigned char *ss2 = (unsigned char*)s2;
 	i = 0;
 	if (n == 0)
 		return (0);

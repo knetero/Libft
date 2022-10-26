@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 17:20:09 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/25 15:17:11 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/26 17:56:44 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,25 +21,31 @@ char *ft_strtrim(char const *s1, char const *set)
 
     i = 0;
     k = 0;
-    if (!s1 || !set)
-        return (NULL);
-    j = ft_strlen(s1) - 1;
-    while (s1[i] && ft_strchr(set, s1[i]))//searching for first chr occu
+    j = ft_strlen(s1);
+    while (s1[i] && ft_strchr(set, s1[i]))//T9ALAB LIYA 3LA CHAR WACH KAYN MN LQODAM
+    {
         i++;
-    while (j > i && ft_strchr(set, s1[j]))//searching for last chr occu
+    }
+    while (j > i && ft_strchr(set, s1[j]))//WACH KAYN MN LOR 
+    {
         j--;
-    str = malloc(sizeof(char) * (j - i + 2));
-    if (!str)
+    }
+    str = (char*)malloc(sizeof(char) * (j - i + 2));
+    if (str == '\0')
         return (NULL);
     while (i <= j)
-        str[k++] = s1[i++];
+    {
+        str[k] = s1[i];
+        i++;
+        k++;
+    }
     str[k] = '\0';
     return (str);
 }
 // int main()
 // {
-//     char *str1 = "   xxxtripouille ";
-//     char *str2 = " x";
+//     char *str1 = "\0";
+//     char *str2 = "\0";
 //     char *str3 = ft_strtrim(str1, str2);
 //     printf("%s", str3);
 // }
