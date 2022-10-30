@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 13:28:15 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/20 16:54:05 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/30 13:51:17 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 }
 // int main()
 // {
-//     char src[] = {65, 66, 67, 68, 69, 0, 45};
-//     char dst[] = { 0,  0,  0,  0,  0,  0, 0};
+//     char src[] = "hello word";
+//     char dst[] = "friend";
 //     printf("%s | ", ft_memmove(dst, src, 7));
 //     printf("%s ", memmove(dst, src, 7));
 // }

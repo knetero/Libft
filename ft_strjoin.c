@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 17:48:18 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/26 10:15:53 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/29 19:14:51 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char *ft_strjoin(char const *s1, char const *s2)
     j = 0;
     if (s1 == '\0' || s2 == '\0')
         return (NULL);
-    if(!(str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2)))))
+    if(!(str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2)) + 1)))
     {
         return (NULL);
     }

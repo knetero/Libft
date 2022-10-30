@@ -6,12 +6,11 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 19:06:06 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/14 14:52:01 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/30 13:51:14 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memset(void *ptr, int i, size_t n)
 {

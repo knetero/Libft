@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 17:59:52 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/26 17:59:47 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/28 13:36:16 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 }
 // int main ()
 // {
-//     char *str1 = "helloworld";
-//     char *str2 = "e";
-//     char *str3 = ft_strnstr(str1, str2, 13);
-//     printf("%s", str3);
+//     char *str1 = "";
+//     char *str2 = "";
+//     printf("%s", ft_strnstr(str1, str2, -1));
+//     printf("%s", ft_strnstr(str1, str2, -1));
 // }
