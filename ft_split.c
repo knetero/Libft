@@ -6,12 +6,11 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 14:24:55 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/30 14:00:09 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/10/30 18:59:56 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int w_count(char *s, char c)
 {
@@ -32,6 +31,18 @@ int w_count(char *s, char c)
             i++;
     }
     return (count);
+}
+void ft_free(char **tab)
+{
+    int i;
+    
+    i = 0;
+    while(tab[i])
+    {
+        free(tab[i]);
+        i++;
+    }
+    free(tab);
 }
 int chr_count(char *s, char c)
 {
@@ -63,8 +74,11 @@ char **ft_split(char const *s, char c)
         if(s[i] != c)
         {
             tab[j] = (char*)malloc(sizeof(char) * (chr_count((char*)s + i, c) + 1));
-            if(!tab[j])
+             if(!tab[j])
+            {
+                ft_free(tab);
                 return (NULL);
+            }
             while(s[i] != c && s[i])
             {
                 tab[j][k] = s[i];
@@ -87,7 +101,7 @@ int main()
    int i;
    
    i = 0;
-   tab = ft_split("svdrgertgheth,ghaehrbghaetharthrth,rthaethaeth,htujy978 boy", ',');
+   tab = ft_split("hello,my,friend,how,are,you", ',');
     while (tab[i])
     {
         printf("%s\n", tab[i]);
