@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 14:24:55 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/30 18:59:56 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/02 11:48:15 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,15 @@ int w_count(char *s, char c)
     }
     return (count);
 }
+int chr_count(char *s, char c)
+{
+    int i;
+
+    i = 0;
+    while (s[i] != c && s[i])
+        i++;
+    return (i);
+}
 void ft_free(char **tab)
 {
     int i;
@@ -44,16 +53,6 @@ void ft_free(char **tab)
     }
     free(tab);
 }
-int chr_count(char *s, char c)
-{
-    int i;
-
-    i = 0;
-    while (s[i] != c && s[i])
-        i++;
-    return (i);
-}
-
 char **ft_split(char const *s, char c)
 {
     char **tab;
@@ -95,16 +94,16 @@ char **ft_split(char const *s, char c)
     tab[j] = NULL;
     return (tab);
 }
-int main()
-{
-   char **tab;
-   int i;
+// int main()
+// {
+//    char **tab;
+//    int i;
    
-   i = 0;
-   tab = ft_split("hello,my,friend,how,are,you", ',');
-    while (tab[i])
-    {
-        printf("%s\n", tab[i]);
-        i++;
-    }
-}
+//    i = 0;
+//    tab = ft_split("leo,messi,10", ',');
+//    while(tab[i])
+//     {
+//         printf("%s\n", tab[i]);
+//         i++;
+//     }
+// }

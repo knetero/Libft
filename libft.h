@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:47:42 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/29 19:02:55 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/02 13:25:51 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,9 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# define intmax 2147483647
-# define intmin -2147483648
 
-// #define NULL 0
-
-
-
+#define INT_MAX 2147483647
+#define INT_MIN -2147483648
 
 # include <stdlib.h>
 # include <unistd.h>
@@ -55,6 +51,7 @@ char    *ft_substr(char const *s, unsigned int start, size_t len);
 char    *ft_strjoin(char const *s1, char const *s2);
 char    *ft_strtrim(char const *s1, char const *set);
 char    **ft_split(char const *s, char c);
+char    *ft_itoa(int n);
 
 
 
