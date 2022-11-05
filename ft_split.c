@@ -6,13 +6,13 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 14:24:55 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/02 11:48:15 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/04 10:42:31 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int w_count(char *s, char c)
+static int w_count(char *s, char c)
 {
     int i;
     int count;
@@ -32,7 +32,7 @@ int w_count(char *s, char c)
     }
     return (count);
 }
-int chr_count(char *s, char c)
+static int chr_count(char *s, char c)
 {
     int i;
 
@@ -41,7 +41,7 @@ int chr_count(char *s, char c)
         i++;
     return (i);
 }
-void ft_free(char **tab)
+static void ft_free(char **tab)
 {
     int i;
     

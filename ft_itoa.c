@@ -6,12 +6,13 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 11:27:22 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/02 17:21:13 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/04 10:42:58 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-char    *ft_rev(char *str)
+
+static char    *ft_rev(char *str)
 {
     int start;
     int end;
@@ -30,7 +31,7 @@ char    *ft_rev(char *str)
     return (str);
 }
 
-int    count_num(int n)
+static int    count_num(int n)
 {
     int    i;
 
