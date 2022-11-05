@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 19:06:06 by abazerou          #+#    #+#             */
-/*   Updated: 2022/10/30 13:51:14 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/05 14:23:49 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 
 void	*ft_memset(void *ptr, int i, size_t n)
 {
-	char *p = ptr;
-	while(n > 0)
+	char	*p;
+
+	p = ptr;
+	while (n > 0)
 	{
 		*p = i;
 		p++;

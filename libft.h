@@ -6,17 +6,15 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:47:42 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/03 20:15:35 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/05 13:00:47 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-
-#define INT_MAX 2147483647
-#define INT_MIN -2147483648
+// #define INT_MAX 2147483647
+// #define INT_MIN -2147483648
 
 # include <stdlib.h>
 # include <unistd.h>
@@ -34,7 +32,7 @@ int ft_tolower(int c);
 int ft_atoi(const char *str);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
 int ft_memcmp(const void *s1, const void *s2, size_t n);
-size_t	ft_strlen(const char *s);
+size_t  ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 void    ft_bzero(void *s, size_t n);
@@ -57,7 +55,7 @@ void    ft_striteri(char *s, void (*f)(unsigned int, char*));
 void    ft_putchar_fd(char c, int fd);
 void    ft_putstr_fd(char *s, int fd);
 void    ft_putendl_fd(char *s, int fd);
-void ft_putnbr_fd(int n, int fd);
-void ft_putnbr_fd(int n, int fd);
+void    ft_putnbr_fd(int n, int fd);
+void    ft_putnbr_fd(int n, int fd);
 
 #endif
