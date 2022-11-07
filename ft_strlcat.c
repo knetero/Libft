@@ -6,13 +6,13 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 10:24:35 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/05 15:41:36 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/07 13:40:22 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t dst_size)
 {
 	size_t	i;
 	size_t	j;
@@ -23,11 +23,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	j = 0;
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
-	if (size <= dst_len)
-		return (src_len + size);
+	if (dst_size <= dst_len)
+		return (src_len + dst_size);
 	while (dst[i])
 		i++;
-	while (src[j] && j < size - dst_len - 1)
+	while (src[j] && j < dst_size - dst_len - 1)
 	{
 		dst[i] = src[j];
 		i++;
@@ -35,4 +35,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	dst[i] = '\0';
 	return (dst_len + src_len);
+}
+int main()
+{
+	char src[] = "hello";
+	char dst[] = "oiop";
+	unsigned int a;
+	a = ft_strlcat(dst, src, 10);
+	printf("%u\n", a);
+	printf("%s", dst);
 }

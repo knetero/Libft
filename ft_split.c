@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 14:24:55 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/05 18:06:41 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/07 13:08:36 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,65 +33,65 @@ static int	w_count(char *s, char c)
 	return (count);
 }
 
-static int	chr_count(char *s, char c)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != c && s[i])
-		i++;
-	return (i);
-}
-
-static void	ft_free(char **tab)
+static char	**ft_free(char **tab)
 {
 	int	i;
 
 	i = 0;
 	while (tab[i])
+		free(tab[i++]);
+	free(tab);
+	return (NULL);
+}
+
+static char	*fill_tab(const char *s1, int *index, char c)
+{
+	char	*copy;
+	int		word_len;
+	int		i;
+
+	word_len = 0;
+	while (s1[*index] == c)
+		(*index)++;
+	i = *index;
+	while (s1[i] && s1[i] != c)
 	{
-		free(tab[i]);
+		word_len++;
 		i++;
 	}
-	free(tab);
+	copy = malloc(sizeof(char) * (word_len + 1));
+	if (!copy)
+		return (NULL);
+	i = 0;
+	while (s1[*index] && s1[*index] != c)
+		copy[i++] = s1[(*index)++];
+	copy[i] = '\0';
+	return (copy);
 }
 
 char	**ft_split(char const *s, char c)
 {
 	char	**tab;
+	int		index;
+	int		wc;
 	int		i;
-	int		j;
-	int		k;
 
+	index = 0;
 	i = 0;
-	j = 0;
-	k = 0;
 	if (!s)
 		return (NULL);
-	tab = (char **)malloc(sizeof(char *) * (w_count((char *)s, c) + 1));
+	wc = w_count((char *)s, c);
+	tab = malloc(sizeof(char *) * (wc + 1));
 	if (!tab)
 		return (NULL);
-	while (s[i])
+	while (i < wc)
 	{
-		if (s[i] != c)
-		{
-			tab[j] = malloc(sizeof(char) * (chr_count((char *)s + i, c) + 1));
-			if (!tab[j])
-			{
-				ft_free(tab);
-				return (NULL);
-			}
-			while (s[i] != c && s[i])
-				tab[j][k] = s[i];
-				i++;
-				k++;
-			tab[j++][k] = '\0';
-			k = 0;
-		}
-		else
-			i++;
+		tab[i] = fill_tab(s, &index, c);
+		if (!tab[i])
+			return (ft_free(tab));
+		i++;
 	}
-	tab[j] = NULL;
+	tab[i] = 0;
 	return (tab);
 }
 // int main()
