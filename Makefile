@@ -6,7 +6,7 @@
 #    By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/09 13:07:13 by abazerou          #+#    #+#              #
-#    Updated: 2022/11/04 16:54:18 by abazerou         ###   ########.fr        #
+#    Updated: 2022/11/09 13:28:45 by abazerou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,9 +28,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS) 
 	ar -crs $@ $^
-bonus: $(OBJS_B) $(OBJS)
-	ar -crs $(NAME) $^
-
+	
 %.o: %.c $(HEADER)
 	$(CC) $(CFLAGS) -c $^
 

@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 10:24:35 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/07 13:40:22 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/08 11:45:58 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dst_size)
 
 	i = 0;
 	j = 0;
+	if (dst_size == 0)
+		return (ft_strlen(src));
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
 	if (dst_size <= dst_len)
@@ -36,12 +38,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dst_size)
 	dst[i] = '\0';
 	return (dst_len + src_len);
 }
-int main()
-{
-	char src[] = "hello";
-	char dst[] = "oiop";
-	unsigned int a;
-	a = ft_strlcat(dst, src, 10);
-	printf("%u\n", a);
-	printf("%s", dst);
-}
+// int main()
+// {
+// 	char src[] = "hello";
+// 	char dst[] = "oiop";
+// 	unsigned int a;
+// 	a = ft_strlcat(dst, src, 10);
+// 	printf("%u\n", a);
+// 	printf("%s", dst);
+// }

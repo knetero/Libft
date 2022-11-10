@@ -6,14 +6,12 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:47:42 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/07 15:46:59 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/08 10:38:56 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
-
 
 # include <stdlib.h>
 # include <unistd.h>
