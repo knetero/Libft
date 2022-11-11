@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 17:20:09 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/08 11:42:48 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/11 13:11:21 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 // int main()
 // {
-//     char *str1 = "   xxxtripouille";
+//     char *str1 = "   xxxtripouillexxxxx";
 //     char *str2 = " x";
 //     char *str3 = ft_strtrim(str1, str2);
 //     printf("%s", str3);

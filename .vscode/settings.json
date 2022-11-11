@@ -2,5 +2,6 @@
     "files.associations": {
         "stdlib.h": "c",
         "__locale": "c"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }

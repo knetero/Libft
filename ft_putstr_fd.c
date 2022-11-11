@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 18:02:01 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/07 10:25:07 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/11 12:47:49 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,10 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-// int main()
-// {
-//     char s[] = "the cake is a lie !\0I'm hidden lol\r\n";
-//     ft_putstr_fd(s, 1);
-// }
+int main()
+{
+    char s[] = "hello world !";
+	int fd;
+	fd = open("test.txt", O_CREAT | O_RDWR);
+    ft_putstr_fd(s, fd);
+}
