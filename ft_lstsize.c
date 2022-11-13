@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 19:41:05 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/13 13:30:21 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/13 15:57:18 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_lstsize(t_list *lst)
 	count = 0;
 	while (lst)
 	{
-		lst = lst->next;//we move to the next node
+		lst = lst->next;
 		count++;
 	}
 	return (count);	
@@ -29,5 +29,5 @@ int	ft_lstsize(t_list *lst)
 // 	t_list *i;
 // 	i = ft_lstnew("hello");
 // 	printf("%d", ft_lstsize(i));
-// } 
- 
+// }
+//we move to the next node

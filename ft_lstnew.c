@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 14:39:29 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/11 16:38:41 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/13 15:58:40 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,4 @@ t_list	*ft_lstnew(void *content)
 //     t_list *i;
 //     i = ft_lstnew("hello");
 //     printf("%s", i->content);
-//     return (0);
 // }
