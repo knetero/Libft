@@ -1,36 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/09 19:06:06 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/11 16:41:47 by abazerou         ###   ########.fr       */
+/*   Created: 2022/11/11 15:50:15 by abazerou          #+#    #+#             */
+/*   Updated: 2022/11/11 19:44:41 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *ptr, int i, size_t n)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	char	*p;
-
-	p = ptr;
-	while (n > 0)
-	{
-		*p = i;
-		p++;
-		n--;
-	}
-	return (ptr);
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }
 // int main()
 // {
-// 	int *i;
-	
-// 	ft_memset(i, 8, 1);
-// 	ft_memset((unsigned char *)i+1,7,1);
-//     printf("%d", *i);
-// 	return (0);
+//     t_list *i;
+//     i = ft_lstnew("hello");
+//     ft_lstadd_front(&i, ft_lstnew("world"));
+//     printf("%s\n", i->content);
+//     printf("%s", i->next->content);
 // }
+//1 -we modify the link part of the new node to point to the first node
+//2- we modify the head pointer to point to the new node
