@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 19:58:29 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/11 13:18:45 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/15 13:00:34 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_putnbr_fd(int n, int fd)
 	if (n < 0)
 	{
 		write(fd, "-", 1);
-		n = -n;
+		n = n * -1;
 	}
 	if (n >= 10)
 		ft_putnbr_fd(n / 10, fd);
@@ -31,8 +31,8 @@ void	ft_putnbr_fd(int n, int fd)
 }
 // int main()
 // {
-//     int fd;
-// 	int n = -26;
+// 	int fd;
+// 	int n = -21;
 // 	fd = open("test.txt", O_CREAT | O_RDWR);
-//     ft_putnbr_fd(n, fd);
+// 	ft_putnbr_fd(n, fd);
 // }

@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 16:47:46 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/10 20:42:14 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/14 21:28:34 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	char	*ptr;
+	void	*ptr;
 
-	ptr = (char *)malloc(count * size);
+	ptr = malloc(count * size);
 	if (!ptr)
 		return (NULL);
 	else
@@ -27,5 +27,4 @@ void	*ft_calloc(size_t count, size_t size)
 // {
 //     printf("%p\n", ft_calloc(25,sizeof(int)));
 //     printf("%p", calloc(25,sizeof(int)));
-//     return 0;
 // }

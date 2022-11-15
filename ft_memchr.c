@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 12:07:43 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/05 13:56:11 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/15 13:23:39 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 }
 // int main()
 // {
-//     char s[] = {0, 1, 2 ,3 ,4 ,5};
-//     printf("%d\n", s[3]);
-
-//     printf("%s\n", ft_memchr(s, 2 + 256, 3));
-//     printf("'%s'\n", memchr(s, 2 + 256, 3));
+//     char s[] = "hello friend";
+//     printf("%s\n", ft_memchr(s, 'e', 10));
+//     printf("%s\n", memchr(s, 'e', 10));
 // }

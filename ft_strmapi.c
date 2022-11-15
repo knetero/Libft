@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 18:01:17 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/10 18:18:35 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/14 18:11:45 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 // char	f(unsigned int i, char c)
 // {
 // 	i = 0;
-// 	return c += 32;
+// 	c += 32;
 // }
 // int main()
 // {

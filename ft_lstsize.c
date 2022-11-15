@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 19:41:05 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/13 15:57:18 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/14 14:47:38 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_lstsize(t_list *lst)
 		lst = lst->next;
 		count++;
 	}
-	return (count);	
+	return (count);
 }
 // int main()
 // {

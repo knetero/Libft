@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 17:15:09 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/11 19:17:12 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/13 21:58:40 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ char	*ft_strchr(const char *s, int c)
 	int	i;
 
 	i = 0;
-	while (s[i] && s[i] != (unsigned char)c)
+	while (s[i] && s[i] != (char)c)
 		i++;
-	if (s[i] == (unsigned char)c)
+	if (s[i] == (char)c)
 		return ((char *)s + i);
 	else
 		return (0);
@@ -30,4 +30,4 @@ char	*ft_strchr(const char *s, int c)
 //     int c = 's';
 //     printf("|%s|\n", ft_strchr(s, c));
 //     printf("|%s|\n", strchr(s, c));
-// }
+// }  

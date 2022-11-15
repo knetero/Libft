@@ -6,7 +6,7 @@
 #    By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/09 13:07:13 by abazerou          #+#    #+#              #
-#    Updated: 2022/11/13 13:23:35 by abazerou         ###   ########.fr        #
+#    Updated: 2022/11/13 18:16:31 by abazerou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,11 +30,11 @@ OBJS_B	=	$(SRCS_B:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS) 
-	ar -crs $@ $^
+	ar -rs $(NAME) $^
 bonus: $(OBJS_B) $(OBJS)
-	ar -crs $(NAME) $^
+	ar -rs $(NAME) $^
 	
-%.o: %.c $(HEADER)
+%.o: %.c
 	$(CC) $(CFLAGS) -c $^
 
 clean:
@@ -42,6 +42,4 @@ clean:
 fclean: clean
 	rm -rf $(NAME)
 re: fclean all
-
-.PHONY: all clean fclean re bonus
 

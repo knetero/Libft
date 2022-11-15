@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 13:28:15 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/07 15:47:32 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/15 13:54:09 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		ft_memcpy(pdst, psrc, len);
 	return (pdst);
 }
-// int main()
-// {
-//     char src[] = "hello word";
-//     char dst[] = "friend";
-//     printf("%s | ", ft_memmove(dst, src, 7));
-//     printf("%s ", memmove(dst, src, 7));
-// }
+int main()
+{
+    char src[] = "hello word";
+    char dst[] = "friend";
+    printf("%s | ", ft_memmove(dst, src, 7));
+    printf("%s ", memmove(dst, src, 7));
+}

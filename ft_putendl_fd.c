@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 19:50:16 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/11 12:13:46 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/14 21:27:47 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ void	ft_putendl_fd(char *s, int fd)
 // {
 //     int fd;
 // 	char *s = "hello";
-// 	fd = open("test.txt", O_CREAT | O_RDWR);
+// 	fd = open("test22.txt", O_CREAT | O_RDWR);
 //     ft_putendl_fd(s, fd);
 // }
