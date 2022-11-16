@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 10:27:26 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/07 10:47:45 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/16 18:24:45 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	ft_atoi(const char *str)
 }
 //  int main()
 //  {
-//     char str[] = "999";
+//     char str[] = "  -520";
 //     printf("%d | ", ft_atoi(str));
 //     printf("%d", atoi(str));
 //  }

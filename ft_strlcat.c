@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 10:24:35 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/13 19:25:44 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/16 15:45:10 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dst_size)
 // {
 // 	char src[] = "hello";
 // 	char dst[] = "oiop";
-// 	printf("%u\n", ft_strlcat(dst, src, 7));
+// 	printf("%d\n", ft_strlcat(dst, src, 2));
 // 	// printf("%s", dst);
-// 	printf("%u\n", strlcat(dst, src, 7));
+// 	printf("%d\n", strlcat(dst, src, 2));
 // }

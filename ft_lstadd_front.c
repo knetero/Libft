@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:50:15 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/14 15:30:48 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/16 16:44:51 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,4 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 //     printf("%s", i->next->content);
 // }
 //1 -we modify the link part of the new node to point to the first node
-//2- we modify the head pointer to point to the new node
+//2- we modify the head pointer to point to the new node 
