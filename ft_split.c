@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 14:24:55 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/16 20:55:23 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/17 15:53:26 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,15 +94,3 @@ char	**ft_split(char const *s, char c)
 	tab[i] = 0;
 	return (tab);
 }
-// int main()
-// {
-//    char **tab;
-//    int i; 
-//    i = 0;
-//    tab = ft_split("leo,messi,10", ',');
-//    while(tab[i])
-//     {
-//         printf("%s\n", tab[i]);
-//         i++;
-//     }
-// }

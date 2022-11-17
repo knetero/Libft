@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 16:47:46 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/14 21:28:34 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/17 14:54:49 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,3 @@ void	*ft_calloc(size_t count, size_t size)
 		ft_bzero(ptr, count * size);
 	return (ptr);
 }
-// int main()
-// {
-//     printf("%p\n", ft_calloc(25,sizeof(int)));
-//     printf("%p", calloc(25,sizeof(int)));
-// }

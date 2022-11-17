@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 19:06:06 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/16 20:56:26 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/17 14:55:30 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,3 @@ void	*ft_memset(void *ptr, int c, size_t n)
 	}
 	return (ptr);
 }
-// int main()
-// {
-// 	int *i;
-// 	ft_memset(i, 57, 1);
-// 	ft_memset((char*)i+1,5,1);
-//     printf("%d", *i);
-// 	return (0);
-// }

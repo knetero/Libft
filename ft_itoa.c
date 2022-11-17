@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 11:27:22 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/16 15:38:19 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/17 14:54:42 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,8 +76,3 @@ char	*ft_itoa(int n)
 		str[i++] = '-';
 	return (str[i] = '\0', ft_rev(str));
 }
-// int main()
-// {
-//     int n = -230;
-//     printf("%s", ft_itoa(n));
-// } 

@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 16:47:19 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/14 21:28:01 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/17 14:59:11 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,3 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
-// int main()
-// {
-//     int fd;
-// 	fd = open("test.txt" , O_CREAT | O_RDWR);
-//     ft_putchar_fd('H', fd);
-// }

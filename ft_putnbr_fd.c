@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 19:58:29 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/15 13:00:34 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/17 14:55:39 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,3 @@ void	ft_putnbr_fd(int n, int fd)
 	n = n % 10 + '0';
 	write(fd, &n, 1);
 }
-// int main()
-// {
-// 	int fd;
-// 	int n = -21;
-// 	fd = open("test.txt", O_CREAT | O_RDWR);
-// 	ft_putnbr_fd(n, fd);
-// }

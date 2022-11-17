@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 18:48:55 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/13 13:35:35 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/17 14:57:09 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-// void    f(unsigned int i, char * s) 
-// {
-//     i = 0;
-//     *s += 32;
-// }
-// int main()
-// {
-//     char str[] = "HELLO";
-//     ft_striteri(str, f);
-//     printf("%s", str);
-// }

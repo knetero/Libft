@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 17:48:18 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/11 13:25:30 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/17 14:57:13 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i] = '\0';
 	return (str);
 }
-// int main()
-// {
-//     char *str1 = "hello";
-//     char *str2 = "world";
-//     char *str3 = ft_strjoin(str1, str2);
-//     printf("%s", str3);
-// }

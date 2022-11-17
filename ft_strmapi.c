@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 18:01:17 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/14 18:11:45 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/17 16:00:37 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-// char	f(unsigned int i, char c)
-// {
-// 	i = 0;
-// 	c += 32;
-// }
-// int main()
-// {
-//     char *str = "HELLO";
-//     printf("%s", ft_strmapi(str, f));
-// }

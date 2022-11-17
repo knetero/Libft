@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 14:39:29 by abazerou          #+#    #+#             */
-/*   Updated: 2022/11/15 14:14:34 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/11/17 14:55:04 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,3 @@ t_list	*ft_lstnew(void *content)
 	new->next = NULL;
 	return (new);
 }
-// int main()
-// {
-//     t_list *i;
-//     i = ft_lstnew("hello");
-//     printf("%s", i->content);
-// }
